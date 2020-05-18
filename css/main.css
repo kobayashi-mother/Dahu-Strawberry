@@ -1,0 +1,759 @@
+    @charset "utf-8";
+    /* CSS Document */
+    
+    @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+    /* -----------------all----------       */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    .show-mobile {
+        display: none!important;
+    }
+    
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    a,
+    a:link,
+    a:hover {
+        text-decoration: none;
+        color: #f1eff0;
+    }
+    /* -----------------body------------------*/
+    /* -----------------head------------------*/
+    
+    header {
+        min-height: 100vh;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1eff0+12,f1eff0+12,b2dac7+43,b2dac7+49,f49298+73,f49298+73 */
+        background: #f1eff0;
+        /* Old browsers */
+        background: -moz-linear-gradient(45deg, #f1eff0 12%, #f1eff0 12%, #b2dac7 43%, #b2dac7 49%, #f49298 73%, #f49298 73%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #f1eff0 12%, #f1eff0 12%, #b2dac7 43%, #b2dac7 49%, #f49298 73%, #f49298 73%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #f1eff0 12%, #f1eff0 12%, #b2dac7 43%, #b2dac7 49%, #f49298 73%, #f49298 73%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1eff0', endColorstr='#f49298', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    nav {
+        padding: 10px 0;
+        margin: 20px 0 40px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 88;
+        transition: 0.5s;
+    }
+    
+    nav.active {
+        width: 200px;
+        right: 0;
+        border-radius: 60px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b2dac7+5,f49298+90,f49298+90 */
+        background: #b2dac7;
+        /* Old browsers */
+        background: -moz-linear-gradient(45deg, #b2dac7 5%, #f49298 90%, #f49298 90%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #b2dac7 5%, #f49298 90%, #f49298 90%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #b2dac7 5%, #f49298 90%, #f49298 90%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b2dac7', endColorstr='#f49298', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    .main-logo {
+        height: 50px;
+    }
+    
+    .main-logo img {
+        height: 100%;
+    }
+    
+    .main-list {
+        flex-grow: 1;
+        padding: 0 40px;
+    }
+    
+    .main-list.active {
+        display: none!important;
+    }
+    
+    .main-list li:hover {
+        text-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+    
+    nav a i {
+        color: #f1eff0;
+        font-size: 30px;
+    }
+    
+    .sandWitch-list {
+        text-align: end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(170, 255, 177, 0.5);
+        z-index: 99;
+    }
+    
+    .sandWitch-list.active {
+        display: none!important;
+    }
+    
+    .sandWitch-list ul {
+        background: #f4b406;
+        height: 100%;
+        width: 30%;
+    }
+    
+    .sandWitch-list li {
+        padding: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .sandWitch-list .arrow {
+        text-align: end;
+    }
+    
+    .sandWitch-list .arrow i {
+        color: #f1eff0;
+        font-size: 40px;
+    }
+    /* ---------------------------------------slogan & slider */
+    
+    .slogan {
+        padding: 130px 0 50px;
+    }
+    
+    .slogan div.box {
+        height: 60vh;
+        max-width: 70%;
+        background: wheat;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .box .slider-img {
+        height: 100%;
+        left: 0;
+        transition: 0.5s;
+    }
+    
+    .box .slider-img li {
+        flex: 1 1 0;
+    }
+    
+    .box .slider-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* ------------------  slogan-text */
+    
+    .slogan div.box .text {
+        color: #f1eff0;
+        text-align: center;
+    }
+    
+    .slogan div.box .text>h1,
+    h2,
+    h5 {
+        font-weight: bold;
+        text-shadow: 0px 0px 0px #f1eff0;
+        transition: 0.5s;
+    }
+    
+    .slogan div.box .text>h1:hover,
+    h2:hover,
+    h5:hover {
+        text-shadow: 2px 2px 10px #f1eff0;
+    }
+    /* ------------------  slogan-text */
+    
+    .slogan .point {
+        width: 90%;
+        left: 5%;
+        bottom: 50px;
+        position: absolute;
+    }
+    
+    .slogan .point li {
+        height: 100px;
+        width: 20px;
+        background: #b2dac7;
+        margin: 0 1.5%;
+    }
+    
+    .slogan .point li.m {
+        margin-right: auto;
+    }
+    
+    .slogan .point li.s {
+        height: 60px;
+    }
+    /* ------------------  scroll */
+    
+    .scroll {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .scroll a {
+        box-shadow: 0 0 10px #cccccc;
+        padding: 5px 15px;
+        border-radius: 25px;
+        font-size: 15px;
+        color: #f1eff0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b2dac7+15,f49298+88 */
+        background: #b2dac7;
+        /* Old browsers */
+        background: -moz-linear-gradient(45deg, #b2dac7 15%, #f49298 88%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #b2dac7 15%, #f49298 88%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #b2dac7 15%, #f49298 88%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b2dac7', endColorstr='#f49298', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    .scroll a:hover {
+        background: #f4b406;
+    }
+    
+    .scroll a i {
+        padding: 0 10px 0 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .show-desktop {
+            display: none !important;
+        }
+        .show-mobile {
+            display: block !important;
+        }
+        nav.active {
+            width: 80px;
+            border-radius: 10%;
+        }
+        .main-logo.active {
+            display: none !important;
+        }
+        .slogan div.box {
+            height: 60vh;
+            max-width: 100%;
+            background: wheat;
+            margin: 0 auto;
+        }
+        .slogan .point {
+            margin: 0 auto;
+            position: unset;
+            padding: 40px 0 0 0;
+            justify-content: center;
+        }
+        .slogan .point li {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            align-self: stretch;
+        }
+        .slogan .point li.m {
+            margin-right: 10px;
+        }
+        .slogan .point li.s {
+            height: 30px;
+        }
+        .sandWitch-list ul {
+            width: 100%;
+        }
+    }
+    /* ----------news------------------------------------------- */
+    
+    .all {
+        height: 2250px;
+        background: #f1eff0;
+    }
+    /* ----------main-title------------------------------------------- */
+    
+    .main-title {
+        padding: 60px 0;
+        height: 350PX;
+        text-align: center;
+        display: block;
+    }
+    
+    .main-title h1 {
+        color: #FF3366;
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .main-title div {
+        height: 100px;
+    }
+    
+    .main-title img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    /* ----------news-slider------------------------------------------- */
+    
+    .news {
+        margin: 0 auto 70px;
+    }
+    
+    .news .slider {
+        height: 500px;
+        position: relative;
+    }
+    
+    .slider .choose {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 88;
+    }
+    
+    .slider .choose div {
+        height: 500px;
+        width: 240px;
+    }
+    
+    .news1 {
+        left: 0;
+        bottom: 50px;
+        transition: .5s;
+    }
+    
+    .news2 {
+        left: 240px;
+        bottom: 0;
+        z-index: 66;
+        transition: .5s;
+    }
+    
+    .news3 {
+        left: 730px;
+        bottom: 50px;
+        transition: .5s;
+    }
+    
+    .news1 figure {
+        width: 320px;
+        height: 190px;
+        background: plum;
+        transition: .5s;
+    }
+    
+    .news2 figure {
+        width: 600px;
+        height: 350px;
+        background: plum;
+        transition: .5s;
+    }
+    
+    .news3 figure {
+        width: 320px;
+        height: 190px;
+        background: plum;
+        transition: .5s;
+    }
+    
+    .slider img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .slider article {
+        width: 320px;
+        margin: 0 auto;
+        padding: 30px 0 0;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    
+    .slider article h3 {
+        color: #f4b406;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-size: 25px;
+    }
+    
+    .slider article p {
+        color: #b2dac7;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .news {
+            margin: 0 auto 150px;
+            padding: 0 0 350px;
+        }
+        .main-title {
+            height: 250PX;
+            padding: 50px;
+        }
+        .main-title div {
+            height: 70px;
+        }
+        .main-title h1 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .news1 {
+            left: 0px;
+            top: 0px;
+            height: 100%;
+        }
+        .news2 {
+            left: 0px;
+            top: 320px;
+        }
+        .news3 {
+            left: 0px;
+            top: 640px;
+        }
+        .news1 figure {
+            width: 100%;
+            height: 200px;
+        }
+        .news2 figure {
+            width: 100%;
+            height: 200px;
+        }
+        .news3 figure {
+            width: 100%;
+            height: 200px;
+        }
+        .slider article {
+            margin: 30px auto;
+            text-align: center;
+        }
+        /* .news .arrow {
+            width: 100%;
+            justify-content: center;
+            font-size: 30px;
+            color: #f49298;
+        } */
+    }
+    /* back------------------------------------------------------------------- */
+    
+    .all .back {
+        top: 2550px;
+        height: 200px;
+        width: 100%;
+        background: #f1eff0;
+    }
+    /* about------------------------------------------------------------------- */
+    
+    .about {
+        padding: 200px 0 0;
+        position: relative;
+    }
+    
+    .about .text {
+        padding: 50px 100px 0;
+    }
+    
+    .draw1 {
+        position: absolute;
+        width: 100%;
+        top: 800;
+        z-index: 99;
+    }
+    
+    .draw1.active {
+        animation: shakeY;
+        animation-duration: 10s;
+    }
+    
+    .draw2 {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        z-index: 88;
+        top: 1000;
+        left: 600px;
+    }
+    
+    .draw3 {
+        width: 100%;
+        height: 600px;
+        position: absolute;
+    }
+    
+    .draw1 img,
+    .draw2 img,
+    .draw3 img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    /* variety------------------------------------------------------------------- */
+    
+    .variety {
+        margin: 0 0 70px 0;
+    }
+    
+    .variety .main-title {
+        background: #f1eff0;
+    }
+    
+    .variety .photo {
+        flex-grow: 1;
+    }
+    
+    .variety .photo .box {
+        margin: 0 50px 50px;
+        text-align: center;
+        z-index: 3;
+    }
+    
+    .variety .box figure {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #f49298;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .variety .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .variety .box article {
+        padding: 24px 0 0;
+    }
+    /* farmers------------------------------------------------------------------- */
+    
+    .farmers h3 {
+        color: #f4b406;
+    }
+    
+    .farmers p {
+        color: #b2dac7;
+    }
+    
+    .farmers .main-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .main-box {
+        margin: 0 auto 100px;
+        width: 70%;
+    }
+    
+    .main-box article {
+        top: 20px;
+        left: 20px;
+        width: 50%;
+    }
+    
+    .main-box article:hover {
+        background: #44444471;
+        border-radius: 10px;
+    }
+    
+    .main-box figure {
+        height: 450px;
+        background: #b2dac7;
+    }
+    
+    .main-box .icons {
+        right: 20px;
+        bottom: 10px;
+    }
+    
+    .farmers ul li {
+        flex: 1 1 0;
+        height: 450px;
+        padding: 0 10px;
+    }
+    
+    .s-box figure {
+        height: 250px;
+        background: #b2dac7;
+    }
+    
+    .s-box article {
+        word-wrap: break-word;
+        padding: 0 10px;
+    }
+    
+    .s-box p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+    
+    .s-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .s-box .icons {
+        text-align: end;
+    }
+    
+    .icons {
+        padding: 0 2px;
+        color: #FF3366;
+        font-size: 25px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .about .text {
+            padding: 0 50px;
+            margin: 0 0 50px;
+        }
+        .all .back {
+            top: 2500px;
+            height: 700px;
+        }
+        .variety .photo {
+            flex-direction: column;
+        }
+        .variety .photo .box {
+            margin: 0 0 50px;
+        }
+        .farmers {
+            padding: 0;
+        }
+        .farmers .main-box {
+            width: 100%;
+            padding: 0px;
+        }
+        .farmers ul {
+            flex-wrap: wrap;
+        }
+        .farmers ul li {
+            flex: 1 1 50%;
+        }
+        .s-box figure {
+            height: 200px;
+        }
+        .draw1 {
+            position: absolute;
+            height: 200px;
+            z-index: 88;
+            bottom: 10px;
+        }
+        .draw2 {
+            height: 200px;
+            z-index: 88;
+            left: 0px;
+        }
+        .draw3 {
+            padding: 0 0 40px;
+        }
+    }
+    /* contact------------------------------------------------------------------- */
+    
+    .information {
+        width: 100%;
+        justify-items: center;
+        padding: 0 0 100px;
+    }
+    
+    .information div,
+    .information ul {
+        flex: 1 1 0;
+        padding: 0 50px;
+    }
+    
+    .information ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .information ul li {
+        padding: 5px;
+    }
+    
+    .information input {
+        padding: 5px;
+        background: #f49298;
+    }
+    
+    .information a {
+        color: #ffffff;
+        background: #b2dac7;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    footer {
+        height: 200px;
+        padding: 60px 0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1eff0+12,f1eff0+12,b2dac7+43,b2dac7+49,f49298+73,f49298+73 */
+        background: #f1eff0;
+        /* Old browsers */
+        background: -moz-linear-gradient(45deg, #f1eff0 12%, #f1eff0 12%, #b2dac7 43%, #b2dac7 49%, #f49298 73%, #f49298 73%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #f1eff0 12%, #f1eff0 12%, #b2dac7 43%, #b2dac7 49%, #f49298 73%, #f49298 73%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #f1eff0 12%, #f1eff0 12%, #b2dac7 43%, #b2dac7 49%, #f49298 73%, #f49298 73%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1eff0', endColorstr='#f49298', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+    }
+    
+    footer div {
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    footer i {
+        font-size: 40px;
+        padding: 0 10px;
+        color: #ffffff;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .information {
+            flex-direction: column;
+        }
+        .information ul {
+            margin: 50px 0 0;
+        }
+        .information ul li:last-child {
+            text-align: center;
+        }
+    }
